@@ -328,11 +328,11 @@ header {
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  border-radius: 3rem;
+  border-radius: 50rem;
   text-align: left;
 
   /* shadow */
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+  --tw-shadow: 0 4px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
     0 8px 10px -6px var(--tw-shadow-color);
@@ -343,7 +343,7 @@ header {
 .lesson-card > img {
   width: 120px;
   height: 120px;
-  border-radius: 1.5rem;
+  border-radius: 50rem;
   /* object-fit: contain; */
 }
 
