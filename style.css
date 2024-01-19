@@ -65,7 +65,7 @@ body {
 }
 
 .menuItem.top-9 {
-  top: 9%;
+  top: 15%;
 }
 
 .loginBtn {
@@ -256,11 +256,9 @@ header {
 }
 
 .section {
-  /* margin: auto; */
   max-width: 80rem;
   /* padding: 1.5rem; */
   text-align: center;
-  overflow-x: hidden;
 }
 
 .section-h,
