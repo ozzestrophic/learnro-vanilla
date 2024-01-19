@@ -31,7 +31,7 @@ body {
 .logo {
   width: 10rem;
   height: fit-content;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .menuItem {
@@ -504,6 +504,8 @@ footer {
   display: flex;
   justify-content: center;
 
+  padding: 3rem 0rem;
+
   --tw-shadow: 0 -5px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
@@ -515,6 +517,7 @@ footer {
 footer section {
   width: 80vw;
   display: flex;
+  flex-direction: column;
   padding: 2rem;
   justify-content: space-between;
   align-items: center;
@@ -649,6 +652,10 @@ footer li {
 
   .founders-note-left span {
     font-size: 3rem;
+  }
+
+  footer section {
+    flex-direction: row;
   }
 }
 
