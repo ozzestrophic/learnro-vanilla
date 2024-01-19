@@ -260,6 +260,7 @@ header {
   max-width: 80rem;
   /* padding: 1.5rem; */
   text-align: center;
+  overflow-x: hidden;
 }
 
 .section-h,
@@ -352,7 +353,7 @@ header {
 /* sample section */
 
 .section.video-section {
-  width: clamp(40rem, 100%, 80rem);
+  width: clamp(100vw, 100%, 80rem);
 }
 
 .video-table-container {
