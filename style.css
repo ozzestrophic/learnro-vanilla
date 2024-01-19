@@ -259,6 +259,9 @@ header {
   max-width: 80rem;
   /* padding: 1.5rem; */
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-h,
@@ -393,6 +396,30 @@ tr td:nth-child(2) {
   color: var(--lrnro-blue);
 }
 
+.postvideo-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.postvideo-div span {
+  color: var(--lrnro-blue);
+}
+
+.postvideo-div button {
+  background-color: var(--lrnro-red);
+  border: none;
+  padding: 1rem 1.5rem;
+  color: white;
+  border-radius: 8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media (min-width: 768px) {
   .navigation {
     border-radius: 100px;
@@ -485,6 +512,10 @@ tr td:nth-child(2) {
 
   table {
     width: 100%;
+  }
+
+  .postvideo-div button {
+    padding: 1rem 6rem;
   }
 }
 
