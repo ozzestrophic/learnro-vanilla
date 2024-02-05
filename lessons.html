@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lessons</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lessons.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS for custom select menu -->
+    <link rel="stylesheet" type="text/css" href="dist/dd.css" />
+
+    <!-- ionic -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navigation">
+      <img src="images/logo.png" alt="Learnro logo" class="logo" />
+      <div id="menuItem" class="menuItem">
+        <ul class="navigation-links">
+          <li class="navigation-link"><a href="./index.html">Home</a></li>
+          <li class="navigation-link active-link">
+            <a href="./lessons.html">Lessons</a>
+          </li>
+          <li class="navigation-link"><a href="">Culture</a></li>
+          <li class="navigation-link"><a href="">About us</a></li>
+        </ul>
+        <select name="" is="ms-dropdown">
+          <option data-image="./images/icons/en.png" value="en" selected>
+            En
+          </option>
+          <option data-image="./images/icons/en.png" value="sp">Sp</option>
+          <option data-image="./images/icons/en.png" value="gr">Gr</option>
+        </select>
+      </div>
+      <div class="topBarBtns">
+        <button class="loginBtn md:block">Log In</button>
+        <ion-icon
+          onclick="toggleMenu(this)"
+          name="menu"
+          class="menu-toggle"
+        ></ion-icon>
+      </div>
+    </nav>
+    <main>
+      <!-- half tone images -->
+      <img
+        src="/images/romaniaDots.svg"
+        alt=""
+        class="ht-image ht-image-left"
+      />
+      <img
+        src="/images/romaniaDots.svg"
+        alt=""
+        class="ht-image ht-image-right"
+      />
+
+      <section class="lessons-list">
+        <div class="lessons-list-title">
+          <h2>Lessons List</h2>
+          <p>A list of lessons and your current progress</p>
+        </div>
+        <div class="lessons-levels">
+          <div class="level-header">
+            <div class="level-header-button">
+              <ion-icon name="caret-up-outline"></ion-icon><span>Level:A0</span>
+            </div>
+            <div class="level-header-title">
+              <h4>Essential Romanian 24 hour course</h4>
+              <div><span>Level Progress</span> <span>40%</span></div>
+              <div class="progress-bar">
+                <div class="progress-bar current"></div>
+              </div>
+            </div>
+          </div>
+          <div class="level-lesson-card">
+            <div class="lesson-card-img-title">
+              <img src="./images/lessons/lesson-1.png" alt="" />
+              <h5><span>A0.1</span>Common Romanian words and basic phrases</h5>
+            </div>
+            <div class="level-lesson-card-details">
+              <div class="mini-lesson-count">
+                <div class="lesson-progress-wheel"></div>
+                <p class="mini-lesson-progress-p">
+                  <span>6/6</span> mini lessons
+                </p>
+              </div>
+              <div class="video-music-count">
+                <div>
+                  <p>4</p>
+                  <ion-icon name="videocam-outline"></ion-icon>
+                </div>
+                <span>|</span>
+                <div>
+                  <p>4</p>
+                  <ion-icon name="musical-note-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h3>Learnro.com</h3>
+        <div>
+          <div>
+            <h5>Learn</h5>
+            <ul>
+              <li><a href="">Vocabulary</a></li>
+              <li><a href="">Pronounciation</a></li>
+              <li><a href="">Grammar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Culture</h5>
+            <ul>
+              <li><a href="">Articles</a></li>
+              <li><a href="">Podcasts</a></li>
+              <li><a href="">Movie lists</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- JS for custom select menu -->
+    <script src="dist/dd.min.js"></script>
+    <script>
+      function toggleMenu(e) {
+        const menuItem = document.querySelector("#menuItem");
+        console.log(e);
+        e.name = e.name === "menu" ? "close" : "menu";
+        menuItem.classList.toggle("top-9");
+      }
+    </script>
+  </body>
+</html>
