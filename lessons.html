@@ -78,7 +78,7 @@
         </div>
         <div class="lessons-level">
           <div class="level-header">
-            <div class="level-header-button">
+            <div class="level-header-button" onclick="toggleLesson(this)">
               <ion-icon name="caret-up-outline"></ion-icon><span>Level:A0</span>
             </div>
             <div class="level-header-title">
@@ -148,8 +148,9 @@
         </div>
         <div class="lessons-level">
           <div class="level-header">
-            <div class="level-header-button">
-              <ion-icon name="caret-up-outline"></ion-icon><span>Level:A0</span>
+            <div class="level-header-button" onclick="toggleLesson(this)">
+              <ion-icon name="caret-down-outline"></ion-icon
+              ><span>Level:A0</span>
             </div>
             <div class="level-header-title">
               <h4>Essential Romanian 24 hour course</h4>
@@ -251,6 +252,19 @@
         console.log(e);
         e.name = e.name === "menu" ? "close" : "menu";
         menuItem.classList.toggle("top-9");
+      }
+
+      function toggleLesson(target) {
+        console.log("hey");
+        const lessonCards = target.parentNode.nextElementSibling;
+        lessonCards.classList.toggle("shown");
+
+        const ionicIcon = target.firstElementChild;
+        if (lessonCards.classList.contains("shown")) {
+          ionicIcon.name = "caret-up-outline";
+        } else {
+          ionicIcon.name = "caret-down-outline";
+        }
       }
     </script>
   </body>
