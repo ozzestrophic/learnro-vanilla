@@ -395,7 +395,7 @@ table {
 }
 
 th {
-  color: gray;
+  color: rgb(53, 53, 53);
 }
 
 tr td:nth-child(2) {
@@ -546,7 +546,7 @@ footer section > div {
 }
 
 footer h4 {
-  color: gray;
+  color: rgb(53, 53, 53);
 }
 
 footer li {
