@@ -41,11 +41,20 @@
           <li class="navigation-link"><a href="">About us</a></li>
         </ul>
         <select name="" is="ms-dropdown">
-          <option data-image="./images/icons/en.png" value="en" selected>
-            En
+          <option
+            data-image="./images/icons/en.png"
+            id="en"
+            value="en"
+            selected
+          >
+            <label for="en">En</label>
           </option>
-          <option data-image="./images/icons/en.png" value="sp">Sp</option>
-          <option data-image="./images/icons/en.png" value="gr">Gr</option>
+          <option data-image="./images/icons/en.png" id="sp" value="sp">
+            <label for="sp">Sp</label>
+          </option>
+          <option data-image="./images/icons/en.png" id="gr" value="gr">
+            <label for="gr">Gr</label>
+          </option>
         </select>
       </div>
       <div class="topBarBtns">
@@ -59,10 +68,16 @@
     </nav>
     <main>
       <!-- half tone images -->
-      <img src="images/romaniaDots.svg" alt="" class="ht-image ht-image-left" />
       <img
         src="images/romaniaDots.svg"
-        alt=""
+        alt="romanian flag halftone for bg"
+        aria-hidden="true"
+        class="ht-image ht-image-left"
+      />
+      <img
+        src="images/romaniaDots.svg"
+        alt="romanian flag halftone for bg"
+        aria-hidden="true"
         class="ht-image ht-image-right"
       />
       <!-- hero section -->
@@ -75,7 +90,7 @@
           Learn at your own pace using Romanian movie clips and follow-up
           exercises free of charge
         </h3>
-        <img src="images/hero-image.png" alt="" class="hero-image" />
+        <img src="images/hero-image.png" alt="hero image" class="hero-image" />
         <div class="button-proof-div">
           <button class="cta-btn">Start learning now</button>
           <p class="proof-text">14 active users</p>
@@ -84,13 +99,13 @@
 
       <!-- features -->
       <section class="section">
-        <h2>What we offer</h2>
+        <h3>What we offer</h3>
         <!-- collection of features -->
         <div class="cards-div">
           <div class="card">
             <img
               src="images/features/1movies.svg"
-              alt=""
+              alt="movie clips"
               class="object-contain"
             />
             <div>
@@ -104,7 +119,7 @@
           <div class="card row-reverse">
             <img
               src="images/features/2exercises.svg"
-              alt=""
+              alt="exercises"
               class="object-contain"
             />
             <div>
@@ -118,7 +133,7 @@
           <div class="card">
             <img
               src="images/features/3words.svg"
-              alt=""
+              alt="words"
               class="object-contain"
             />
             <div>
@@ -132,7 +147,7 @@
           <div class="card row-reverse">
             <img
               src="images/features/4culture.svg"
-              alt=""
+              alt="culture"
               class="object-contain"
             />
             <div>
@@ -146,7 +161,7 @@
           <div class="card">
             <img
               src="images/features/5coaching.svg"
-              alt=""
+              alt="coaching"
               class="object-contain"
             />
             <div>
@@ -162,10 +177,10 @@
 
       <!-- lessons -->
       <section class="section">
-        <h2>Some of our popular lessons</h2>
+        <h3>Some of our popular lessons</h3>
         <div class="lessons-container">
           <div class="lesson-card">
-            <img src="images/lessons/lesson-3.png" alt="" />
+            <img src="images/lessons/lesson-3.png" alt="lesson img" />
             <div>
               <h4>lesson title</h4>
               <p>
@@ -177,7 +192,7 @@
             </div>
           </div>
           <div class="lesson-card">
-            <img src="images/lessons/lesson-3.png" alt="" />
+            <img src="images/lessons/lesson-3.png" alt="lesson img" />
             <div>
               <h4>lesson title</h4>
               <p>
@@ -189,7 +204,7 @@
             </div>
           </div>
           <div class="lesson-card">
-            <img src="images/lessons/lesson-3.png" alt="" />
+            <img src="images/lessons/lesson-3.png" alt="lesson img" />
             <div>
               <h4>lesson title</h4>
               <p>
@@ -201,7 +216,7 @@
             </div>
           </div>
           <div class="lesson-card">
-            <img src="images/lessons/lesson-3.png" alt="" />
+            <img src="images/lessons/lesson-3.png" alt="lesson img" />
             <div>
               <h4>lesson title</h4>
               <p>
@@ -216,10 +231,11 @@
       </section>
 
       <section class="section video-section">
-        <h2>Start with this video</h2>
+        <h3>Start with this video</h3>
         <div class="video-table-container">
           <div>
             <iframe
+              title="youtube video"
               class="video-frame"
               src="https://www.youtube.com/embed/RKIK83cJX2Y?rel=0"
               frameborder="0"
@@ -272,7 +288,7 @@
       </section>
 
       <section class="section">
-        <h2>What our users say about us</h2>
+        <h3>What our users say about us</h3>
         <div class="testimonials-cards">
           <div class="testimonial-card">
             <span

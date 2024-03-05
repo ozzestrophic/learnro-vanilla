@@ -271,7 +271,7 @@ header {
 }
 
 .section-h,
-.section > h2 {
+.section > h3 {
   font-size: 1.875rem;
   line-height: 2.25rem;
   color: var(--lrnro-blue);
