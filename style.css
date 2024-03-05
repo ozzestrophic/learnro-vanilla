@@ -316,7 +316,7 @@ header {
 
 .card p,
 .lesson-card p {
-  color: rgb(107 114 128);
+  color: rgb(53, 53, 53);
   font-size: 0.75rem;
   line-height: 1rem;
   margin: 0;
@@ -545,7 +545,7 @@ footer section > div {
   gap: 3rem;
 }
 
-footer h5 {
+footer h4 {
   color: gray;
 }
 
