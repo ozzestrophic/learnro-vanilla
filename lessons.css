@@ -1,7 +1,9 @@
 :root {
   --lrnro-blue: rgb(0 39 128);
+  --lrnro-blue-light: rgb(176, 190, 225);
   --lrnro-yellow: rgb(252 210 15);
   --lrnro-red: rgb(200 16 37);
+  --lrnro-red-light: rgb(233, 190, 195);
   --lrnro-gray: rgb(243 244 246);
 }
 
@@ -299,8 +301,10 @@ main {
   color: var(--lrnro-blue);
   justify-content: center;
   align-items: center;
-  border: solid var(--lrnro-blue) 3px;
+  /* border: solid var(--lrnro-blue) 3px; */
   border-radius: 4rem;
+  background: radial-gradient(closest-side, white 70%, transparent 70% 100%),
+    conic-gradient(var(--lrnro-blue) 100%, var(--lrnro-blue-light) 0);
 }
 
 .mini-lesson-count span {
@@ -316,6 +320,82 @@ main {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.line-break {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  align-items: center;
+}
+
+.line-break hr {
+  border: 0.8px gray dashed;
+}
+.line-break span {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.lesson-rewards {
+  grid-column: 1 / span 2;
+}
+
+.reward-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: white;
+  border: solid #e0e0e0 1px;
+  border-radius: 1.5rem;
+}
+
+.reward-card-start {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.reward-card-start img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.reward-card-title {
+  text-align: left;
+}
+
+.reward-card-title h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.reward-card-title p {
+  font-size: 0.75rem;
+}
+
+.reward-card-count {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: gray;
+  font-size: 0.875rem;
+}
+
+.reward-card-count span {
+  font-weight: 700;
+}
+
+.reward-progress-wheel {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  color: var(--lrnro-red);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  background: radial-gradient(closest-side, white 70%, transparent 70% 100%),
+    conic-gradient(var(--lrnro-red) 25%, var(--lrnro-red-light) 0);
 }
 
 /* footer */
