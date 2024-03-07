@@ -91,6 +91,23 @@ body {
   border-color: var(--lrnro-blue);
 }
 
+.logged-user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logged-user span {
+  font-size: 12px;
+}
+
+.logged-user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  box-shadow: var(--lrnro-box-shadow);
+}
+
 .topBarBtns {
   display: flex;
   gap: 2vw;
@@ -156,13 +173,13 @@ main {
   gap: 0.5rem;
 }
 
-.lessons-list-title h2 {
+.lessons-list-title h1 {
   color: var(--lrnro-red);
   font-size: 2rem;
 }
 
 .lessons-list-title p {
-  color: gray;
+  color: rgb(70, 70, 70);
 }
 
 .lessons-level {
@@ -205,7 +222,7 @@ main {
   align-items: start;
 }
 
-.level-header-title > h4 {
+.level-header-title > h2 {
   font-size: 1.5rem;
   margin: 0;
   font-weight: 400;
@@ -218,7 +235,7 @@ main {
 }
 
 .level-header-title span {
-  color: gray;
+  color: rgb(70, 70, 70);
   font-size: 0.75rem;
 }
 
@@ -288,7 +305,7 @@ main {
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
-  color: gray;
+  color: rgb(70, 70, 70);
   font-size: 0.875rem;
 }
 
@@ -362,7 +379,7 @@ main {
   display: flex;
   width: 100%;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 1rem;
 }
 .reward-card-start img {
@@ -389,7 +406,7 @@ main {
   display: flex;
   gap: 1rem;
   /* align-items: center; */
-  color: gray;
+  color: rgb(70, 70, 70);
   font-size: 0.875rem;
 }
 
@@ -527,7 +544,7 @@ main {
 
 .comment-header p {
   font-size: 10px;
-  color: gray;
+  color: rgb(70, 70, 70);
 }
 
 .comment-text {
@@ -573,10 +590,6 @@ footer h3 {
 footer section > div {
   display: flex;
   gap: 3rem;
-}
-
-footer h5 {
-  color: gray;
 }
 
 footer li {
@@ -625,6 +638,8 @@ footer li {
 
   .reward-card-start {
     flex-direction: row;
+    width: auto;
+    align-items: center;
   }
 
   .reward-card-start img {
