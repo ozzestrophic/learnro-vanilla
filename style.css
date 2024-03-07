@@ -144,10 +144,9 @@ main {
   position: relative;
 }
 
-header {
+.hero-header {
   display: flex;
   flex-direction: column;
-  /* grid-row-start: 1; */
   gap: 1.5rem;
   z-index: 40;
   overflow-x: hidden;
