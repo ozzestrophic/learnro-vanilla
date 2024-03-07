@@ -249,7 +249,7 @@ main {
 }
 
 .level-lesson-card {
-  grid-column: 1 / span2;
+  grid-column: 1 / span 2;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -284,7 +284,9 @@ main {
 
 .level-lesson-card-details {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
   color: gray;
   font-size: 0.875rem;
 }
@@ -346,7 +348,9 @@ main {
 
 .reward-card {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   padding: 1.5rem;
   background-color: white;
   border: solid #e0e0e0 1px;
@@ -391,8 +395,8 @@ main {
 }
 
 .reward-progress-wheel {
-  height: 36px;
-  width: 36px;
+  height: 24px;
+  width: 24px;
   display: flex;
   color: var(--lrnro-red);
   justify-content: center;
@@ -400,6 +404,10 @@ main {
   border-radius: 4rem;
   background: radial-gradient(closest-side, white 70%, transparent 70% 100%),
     conic-gradient(var(--lrnro-red) 25%, var(--lrnro-red-light) 0);
+}
+
+.ion-icon {
+  font-size: 12px;
 }
 
 /* footer */
@@ -475,6 +483,30 @@ footer li {
   .level-lesson-card {
     grid-column: span 1;
   }
+
+  .level-lesson-card-details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .reward-card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .reward-card-count {
+    flex-direction: row-reverse;
+  }
+
+  .reward-progress-wheel {
+    height: 36px;
+    width: 36px;
+  }
+
+  .ion-icon {
+    font-size: 16px;
+  }
+
   .menuItem {
     position: static;
     min-height: -moz-min-content;
