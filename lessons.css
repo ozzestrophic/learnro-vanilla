@@ -290,13 +290,14 @@ main {
   object-fit: cover;
 }
 
-.lesson-card-img-title h5 {
+.lesson-card-img-title h4 {
   font-size: 1rem;
   font-weight: 400;
+  text-align: left;
   display: flex;
   gap: 0.5rem;
 }
-.lesson-card-img-title h5 > span {
+.lesson-card-img-title h4 > span {
   font-weight: 700;
 }
 
@@ -354,7 +355,7 @@ main {
 }
 .line-break span {
   font-size: 0.8rem;
-  color: gray;
+  color: rgb(70, 70, 70);
 }
 
 .lesson-rewards {
